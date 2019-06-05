@@ -31,6 +31,13 @@ module.exports = {
 		},
   module: {
 	  rules: [
+			{
+				test: /\.less$/,
+				use: [
+					'style-loader',
+					'less-loader'
+					]
+			},
 	    {
 			test: /\.css$/,
 			use: [
